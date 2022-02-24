@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="skrypt" href="skrypt.js">
+    <title>Main Page</title>
+</head>
+<body>
+
+<header>
+<h1 id="title">Calculator</h1>
+</header>
+
+<main>
+    <input type="text" id="nice" name="answer" onkeypress="enterKeyPressed(event)" autofocus >
+
+<div class="grid">
+    <input class="grid-item" type="button" value="1" onclick="nice.value += '1' ">
+    <input class="grid-item" type="button" value="2" onclick="nice.value += '2' ">
+    <input class="grid-item" type="button" value="3" onclick="nice.value += '3' ">
+    <input class="grid-item" type="button" value="4" onclick="nice.value += '4' ">
+    <input class="grid-item" type="button" value="5" onclick="nice.value += '5' ">
+    <input class="grid-item" type="button" value="6" onclick="nice.value += '6' ">
+    <input class="grid-item" type="button" value="7" onclick="nice.value += '7' ">
+    <input class="grid-item" type="button" value="8" onclick="nice.value += '8' ">
+    <input class="grid-item" type="button" value="9" onclick="nice.value += '9' ">
+    <input class="grid-item" type="button" value="+" onclick="nice.value += '+' ">
+    <input class="grid-item" type="button" value="-" onclick="nice.value += '-' ">
+    <input class="grid-item" type="button" value="/" onclick="nice.value += '/' ">
+    <input class="grid-item" type="button" value="*" onclick="nice.value += '*' ">
+    <input class="grid-item" type="button" value="SQRT" onclick="nice.value = Math.sqrt(nice.value) ">
+    <input class="grid-item" type="button" value="Clear" onclick="nice.value = '' ">
+</div>
+
+<input id="Result" type="button" value="Result" onclick="nice.value = eval(nice.value) , Valid()" >
+
+</main>
+
+<Footer>
+
+
+<p>If you want to erase whole line press Space </p>
+
+</Footer>
+
+
+
+<script src="skrypt.js"></script>
+
+</body>
+</html>
